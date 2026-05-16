@@ -3,68 +3,88 @@ layout: default
 ---
 
 <section class="hero">
-  <div class="container hero__content">
+  <div class="container hero__content hero__content--simple">
     <div class="hero__text">
-      <span class="eyebrow">Recetas fáciles y deliciosas</span>
-      <h1>{{ page.hero_title | default: "Cocina casera para cada día" }}</h1>
+      <span class="eyebrow">Recetario personal</span>
+      <h1>{{ page.hero_title | default: "Mis recetas favoritas, siempre a mano" }}</h1>
       <p>
-        {{ page.hero_text | default: "Descubre recetas paso a paso, ingredientes claros y platos irresistibles para cualquier ocasión." }}
+        {{ page.hero_text | default: "Un recetario simple, cómodo y ordenado para encontrar rápido qué cocinar." }}
       </p>
-      <div class="hero__actions">
-        <a href="{{ '/recetas/' | relative_url }}" class="btn btn--primary">Ver recetas</a>
-        <a href="#ultimas-recetas" class="btn btn--ghost">Explorar</a>
-      </div>
-    </div>
 
-    <div class="hero__card">
-      <div class="hero__badge">Nuevo</div>
-      <h2>Tu recetario en Jekyll</h2>
-      <p>Añade nuevas recetas en Markdown dentro de <strong>_recipes/</strong> y se generarán automáticamente.</p>
-      <ul>
-        <li>Diseño responsive</li>
-        <li>Recetas por colección</li>
-        <li>Fácil de publicar en GitHub Pages</li>
-      </ul>
+      <div class="hero-search">
+        <label for="recipe-search" class="sr-only">Buscar recetas</label>
+        <div class="search-box">
+          <input
+            type="search"
+            id="recipe-search"
+            class="search-input"
+            placeholder="Buscar por nombre o ingrediente... ej: avena, carne, tortilla"
+            aria-label="Buscar por nombre o ingrediente"
+          >
+          <button type="button" id="clear-search" class="search-clear" aria-label="Limpiar búsqueda">
+            Limpiar
+          </button>
+        </div>
+        <p class="search-help">
+          Busca por nombre, categoría, tags, ingredientes o texto de la receta.
+        </p>
+      </div>
+
+      <div class="hero__actions">
+        <a href="{{ '/recetas/' | relative_url }}" class="btn btn--primary">Ver todas</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section section--compact">
   <div class="container">
     <div class="section__heading">
-      <h2>¿Qué encontrarás aquí?</h2>
-      <p>Un sitio limpio, moderno y fácil de mantener para publicar recetas.</p>
-    </div>
-
-    <div class="feature-grid">
-      <article class="feature-card">
-        <h3>Recetas claras</h3>
-        <p>Ingredientes, tiempos, porciones y pasos bien organizados.</p>
-      </article>
-      <article class="feature-card">
-        <h3>Responsive</h3>
-        <p>Se adapta a móvil, tablet y escritorio sin tocar nada más.</p>
-      </article>
-      <article class="feature-card">
-        <h3>Fácil de ampliar</h3>
-        <p>Solo crea un archivo Markdown nuevo dentro de la colección de recetas.</p>
-      </article>
+      <h2>Qué encontrarás aquí</h2>
+      <p>Una colección simple de recetas para el día a día, organizada para encontrar rápido lo que quieres cocinar.</p>
     </div>
   </div>
 </section>
 
 <section class="section section--alt" id="ultimas-recetas">
   <div class="container">
-    <div class="section__heading">
-      <h2>Últimas recetas</h2>
-      <p>Las recetas más recientes de tu recetario.</p>
+    <div class="section__heading section__heading--between">
+      <div>
+        <h2>Recetas</h2>
+        <p id="search-status">Explora las recetas del recetario.</p>
+      </div>
     </div>
 
-    <div class="recipe-grid">
+    <div id="search-empty" class="search-empty card" hidden>
+      <h3>No encontré resultados</h3>
+      <p>Prueba con otro término, por ejemplo: <strong>avena</strong>, <strong>carne</strong> o el nombre de una receta.</p>
+    </div>
+
+    <div class="recipe-grid" id="recipe-grid">
       {% assign latest_recipes = site.recipes | sort: "date" | reverse %}
-      {% for recipe in latest_recipes limit:6 %}
+      {% for recipe in latest_recipes %}
         {% include recipe-card.html recipe=recipe %}
       {% endfor %}
     </div>
   </div>
 </section>
+
+<script id="recipes-search-data" type="application/json">
+[
+  {% for recipe in site.recipes %}
+    {
+      "title": {{ recipe.title | jsonify }},
+      "url": {{ recipe.url | relative_url | jsonify }},
+      "description": {{ recipe.description | default: "" | strip_html | normalize_whitespace | jsonify }},
+      "category": {{ recipe.category | default: "" | jsonify }},
+      "image": {{ recipe.image | default: "" | relative_url | jsonify }},
+      "total_time": {{ recipe.total_time | default: "" | jsonify }},
+      "servings": {{ recipe.servings | default: "" | jsonify }},
+      "difficulty": {{ recipe.difficulty | default: "" | jsonify }},
+      "author": {{ recipe.author | default: "" | jsonify }},
+      "tags": {{ recipe.tags | default: empty | jsonify }},
+      "content": {{ recipe.content | markdownify | strip_html | normalize_whitespace | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+</script>

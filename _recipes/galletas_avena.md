@@ -1,11 +1,18 @@
 ---
-layout: receta
 title: "Galletas de avena"
-descripcion: "Galletas de avena sin trigo en 15 minutos."
-tiempo: "15 min"
-dificultad: "Fácil"
-porciones: "15 galletitas"
-imagen: "https://images.unsplash.com/photo-1621996346565-e3bb6463591e?w=800"
+date: 2026-05-15
+description: "Galletas de avena sin trigo en 15 minutos."
+category: "Pasta"
+image: /assets/images/hero-recetas.jpg
+prep_time: "10 min"
+cook_time: "15 min"
+total_time: "25 min"
+servings: "2 personas"
+difficulty: "Fácil"
+tags:
+  - galletitas
+  - merienda
+  - rápida
 ---
 
 ## Ingredientes
