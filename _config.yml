@@ -1,0 +1,13 @@
+title: Sabores Caseros
+description: Mi recetario digital responsive y elegante.
+url: "https://ibarrau.github.io" # Cambia por tu usuario de GitHub
+baseurl: "/Recetas"          # Cambia por el nombre de tu repositorio
+
+# Configuración de la colección de recetas
+collections:
+  recipes:
+    output: true
+    permalink: /recetas/:path/
+
+# Configuración de Markdown
+markdown: kramdown

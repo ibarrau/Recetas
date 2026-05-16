@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #e65c00;
+  --secondary-color: #f9f9f9;
+  --text-color: #333;
+  --light-text: #666;
+  --max-width: 1100px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header */
+.main-header { background: #fff; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); text-decoration: none; }
+.main-nav ul { display: flex; list-style: none; }
+.main-nav a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+.menu-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+
+/* Hero */
+.hero { text-align: center; padding: 60px 20px; background: #fdf5f0; border-radius: 12px; margin-bottom: 40px; }
+.hero h1 { font-size: 2.5rem; color: var(--primary-color); margin-bottom: 10px; }
+
+/* Grid de Recetas Responsive */
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.recipe-card {
+  background: var(--secondary-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.recipe-card:hover { transform: translateY(-5px); }
+.recipe-image { width: 100%; height: 200px; object-fit: cover; }
+.recipe-content { padding: 20px; }
+.recipe-meta { font-size: 0.85rem; color: var(--light-text); margin-bottom: 10px; }
+.btn { display: inline-block; background: var(--primary-color); color: #fff; padding: 8px 16px; border-radius: 4px; text-decoration: none; font-size: 0.9rem; margin-top: 15px; }
+
+/* Página de Receta Individual */
+.btn-back { text-decoration: none; color: var(--primary-color); font-weight: bold; display: inline-block; margin-bottom: 20px; }
+.recipe-header { margin-bottom: 20px; }
+.recipe-meta-details { display: flex; gap: 20px; background: var(--secondary-color); padding: 15px; border-radius: 6px; margin-top: 15px; }
+.recipe-main-image { width: 100%; max-height: 450px; object-fit: cover; border-radius: 8px; margin-bottom: 30px; }
+.recipe-body h2 { margin: 25px 0 15px; color: var(--primary-color); }
+.recipe-body ul, .recipe-body ol { padding-left: 20px; margin-bottom: 20px; }
+.recipe-body li { margin-bottom: 8px; }
+
+/* Footer */
+.main-footer { text-align: center; padding: 40px 0; border-top: 1px solid #eee; margin-top: 60px; color: var(--light-text); }
+
+/* Responsive para Móviles */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .main-nav ul { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: #fff; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+  .main-nav ul.active { display: flex; }
+  .recipe-meta-details { flex-direction: column; gap: 10px; }
+}

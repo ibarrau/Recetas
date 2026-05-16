@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+<section class="recipes-grid">
+  {% for receta in site.recipes %}
+    <article class="recipe-card">
+      {% if receta.imagen %}
+        <img src="{{ receta.imagen | relative_url }}" alt="{{ receta.title }}" class="recipe-image">
+      {% endif %}
+      <div class="recipe-content">
+        <h3>{{ receta.title }}</h3>
+        <p class="recipe-meta">⏱️ {{ receta.tiempo }} | 🌶️ {{ receta.dificultad }}</p>
+        <p>{{ receta.descripcion | truncate: 100 }}</p>
+        <a href="{{ receta.url | relative_url }}" class="btn">Ver Receta</a>
+      </div>
+    </article>
+  {% endfor %}
+</section>
