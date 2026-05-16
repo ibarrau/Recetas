@@ -1,10 +1,10 @@
 title: "Sabores de Casa"
 description: "Un recetario de cocina casero, responsive y hecho con Jekyll."
-baseurl: ""
-url: ""
+baseurl: "/Recetas"
+url: "https://ibarrau.github.io"
 
 lang: es
-timezone: Europe/Madrid
+timezone: Jujuy/Argentina
 
 markdown: kramdown
 highlighter: rouge
