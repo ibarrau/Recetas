@@ -1,0 +1,14 @@
+<div class="recipe-meta">
+  {% if include.recipe.total_time %}
+    <span>⏱ {{ include.recipe.total_time }}</span>
+  {% endif %}
+  {% if include.recipe.servings %}
+    <span>🍽 {{ include.recipe.servings }}</span>
+  {% endif %}
+  {% if include.recipe.difficulty %}
+    <span>⭐ {{ include.recipe.difficulty }}</span>
+  {% endif %}
+  {% if include.recipe.author %}
+    <span>👨‍🍳 {{ include.recipe.author }}</span>
+  {% endif %}
+</div>

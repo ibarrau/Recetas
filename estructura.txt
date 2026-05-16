@@ -1,0 +1,30 @@
+mi-recetario-jekyll/
+├─ _config.yml
+├─ Gemfile
+├─ index.html
+├─ recetas.html
+├─ about.md
+├─ 404.html
+├─ _recipes/
+│  ├─ tortilla-de-patatas.md
+│  ├─ pasta-alfredo.md
+│  └─ brownies-de-chocolate.md
+├─ _layouts/
+│  ├─ default.html
+│  ├─ home.html
+│  ├─ recipe.html
+│  └─ page.html
+├─ _includes/
+│  ├─ head.html
+│  ├─ header.html
+│  ├─ footer.html
+│  ├─ recipe-card.html
+│  └─ recipe-meta.html
+├─ assets/
+│  ├─ css/
+│  │  └─ style.css
+│  ├─ js/
+│  │  └─ main.js
+│  └─ images/
+│     └─ hero-recetas.jpg
+└─ README.md

@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<article class="recipe-page">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Inicio</a>
+      <span>/</span>
+      <a href="{{ '/recetas/' | relative_url }}">Recetas</a>
+      <span>/</span>
+      <span>{{ page.title }}</span>
+    </nav>
+
+    <header class="recipe-hero">
+      <div class="recipe-hero__content">
+        {% if page.category %}
+          <span class="recipe-category">{{ page.category }}</span>
+        {% endif %}
+        <h1>{{ page.title }}</h1>
+        {% if page.description %}
+          <p class="recipe-description">{{ page.description }}</p>
+        {% endif %}
+
+        {% include recipe-meta.html recipe=page %}
+      </div>
+
+      {% if page.image %}
+        <div class="recipe-hero__image">
+          <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+      {% endif %}
+    </header>
+
+    <div class="recipe-body">
+      <aside class="recipe-sidebar card">
+        <h2>Ficha rápida</h2>
+        <ul class="recipe-facts">
+          {% if page.prep_time %}<li><strong>Preparación:</strong> {{ page.prep_time }}</li>{% endif %}
+          {% if page.cook_time %}<li><strong>Cocción:</strong> {{ page.cook_time }}</li>{% endif %}
+          {% if page.total_time %}<li><strong>Total:</strong> {{ page.total_time }}</li>{% endif %}
+          {% if page.servings %}<li><strong>Porciones:</strong> {{ page.servings }}</li>{% endif %}
+          {% if page.difficulty %}<li><strong>Dificultad:</strong> {{ page.difficulty }}</li>{% endif %}
+        </ul>
+
+        {% if page.tags %}
+          <div class="tags">
+            {% for tag in page.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </aside>
+
+      <section class="recipe-content card">
+        {{ content }}
+      </section>
+    </div>
+  </div>
+</article>

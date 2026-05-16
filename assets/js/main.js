@@ -1,10 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".site-nav");
 
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      const isOpen = nav.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
   }
 });

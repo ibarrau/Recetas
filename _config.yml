@@ -1,13 +1,32 @@
-title: Sabores Caseros
-description: Mi recetario digital responsive y elegante.
-url: "https://ibarrau.github.io" # Cambia por tu usuario de GitHub
-baseurl: "/Recetas"          # Cambia por el nombre de tu repositorio
+title: "Sabores de Casa"
+description: "Un recetario de cocina casero, responsive y hecho con Jekyll."
+baseurl: ""
+url: ""
 
-# Configuración de la colección de recetas
+lang: es
+timezone: Europe/Madrid
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:collection/:name/
+
 collections:
   recipes:
     output: true
-    permalink: /recetas/:path/
+    permalink: /recetas/:name/
 
-# Configuración de Markdown
-markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

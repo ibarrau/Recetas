@@ -3,22 +3,68 @@ layout: default
 ---
 
 <section class="hero">
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
+  <div class="container hero__content">
+    <div class="hero__text">
+      <span class="eyebrow">Recetas fáciles y deliciosas</span>
+      <h1>{{ page.hero_title | default: "Cocina casera para cada día" }}</h1>
+      <p>
+        {{ page.hero_text | default: "Descubre recetas paso a paso, ingredientes claros y platos irresistibles para cualquier ocasión." }}
+      </p>
+      <div class="hero__actions">
+        <a href="{{ '/recetas/' | relative_url }}" class="btn btn--primary">Ver recetas</a>
+        <a href="#ultimas-recetas" class="btn btn--ghost">Explorar</a>
+      </div>
+    </div>
+
+    <div class="hero__card">
+      <div class="hero__badge">Nuevo</div>
+      <h2>Tu recetario en Jekyll</h2>
+      <p>Añade nuevas recetas en Markdown dentro de <strong>_recipes/</strong> y se generarán automáticamente.</p>
+      <ul>
+        <li>Diseño responsive</li>
+        <li>Recetas por colección</li>
+        <li>Fácil de publicar en GitHub Pages</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<section class="recipes-grid">
-  {% for receta in site.recipes %}
-    <article class="recipe-card">
-      {% if receta.imagen %}
-        <img src="{{ receta.imagen | relative_url }}" alt="{{ receta.title }}" class="recipe-image">
-      {% endif %}
-      <div class="recipe-content">
-        <h3>{{ receta.title }}</h3>
-        <p class="recipe-meta">⏱️ {{ receta.tiempo }} | 🌶️ {{ receta.dificultad }}</p>
-        <p>{{ receta.descripcion | truncate: 100 }}</p>
-        <a href="{{ receta.url | relative_url }}" class="btn">Ver Receta</a>
-      </div>
-    </article>
-  {% endfor %}
+<section class="section">
+  <div class="container">
+    <div class="section__heading">
+      <h2>¿Qué encontrarás aquí?</h2>
+      <p>Un sitio limpio, moderno y fácil de mantener para publicar recetas.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <h3>Recetas claras</h3>
+        <p>Ingredientes, tiempos, porciones y pasos bien organizados.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Responsive</h3>
+        <p>Se adapta a móvil, tablet y escritorio sin tocar nada más.</p>
+      </article>
+      <article class="feature-card">
+        <h3>Fácil de ampliar</h3>
+        <p>Solo crea un archivo Markdown nuevo dentro de la colección de recetas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="ultimas-recetas">
+  <div class="container">
+    <div class="section__heading">
+      <h2>Últimas recetas</h2>
+      <p>Las recetas más recientes de tu recetario.</p>
+    </div>
+
+    <div class="recipe-grid">
+      {% assign latest_recipes = site.recipes | sort: "date" | reverse %}
+      {% for recipe in latest_recipes limit:6 %}
+        {% include recipe-card.html recipe=recipe %}
+      {% endfor %}
+    </div>
+  </div>
 </section>

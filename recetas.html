@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Recetas"
+permalink: /recetas/
+description: "Listado completo de recetas"
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section__heading">
+      <h1>Todas las recetas</h1>
+      <p>Explora todas las recetas publicadas en el sitio.</p>
+    </div>
+
+    <div class="recipe-grid">
+      {% assign all_recipes = site.recipes | sort: "title" %}
+      {% for recipe in all_recipes %}
+        {% include recipe-card.html recipe=recipe %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
