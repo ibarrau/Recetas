@@ -3,7 +3,7 @@ title: "12 Hamburguesas de Polenta"
 date: 2026-05-16
 description: "Hamburguesas de polenta con verduras, económicas y fáciles para freezer o comida diaria."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/hamburguesa de polenta.jpeg
 prep_time: "20 min"
 cook_time: "20 min"
 total_time: "40 min"

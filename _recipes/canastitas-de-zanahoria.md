@@ -3,7 +3,7 @@ title: "Canastitas de Zanahoria"
 date: 2026-05-16
 description: "Canastitas suaves y sabrosas con zanahoria y queso."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/canastitas de zanahoria.jpg
 prep_time: "20 min"
 cook_time: "25 min"
 total_time: "45 min"

@@ -3,7 +3,7 @@ title: "Pan de Huevo"
 date: 2026-05-16
 description: "Panecillos rápidos con huevo, suaves y simples para resolver una comida o acompañar mates."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/pan de leche.jpg
 prep_time: "10 min"
 cook_time: "20 min"
 total_time: "30 min"

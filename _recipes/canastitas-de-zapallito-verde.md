@@ -3,7 +3,7 @@ title: "Canastitas de Zapallito Verde"
 date: 2026-05-16
 description: "Canastitas saladas con zapallito, queso y cebolla, ideales para una comida liviana."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/canastas de zapallito.jpg
 prep_time: "20 min"
 cook_time: "25 min"
 total_time: "45 min"

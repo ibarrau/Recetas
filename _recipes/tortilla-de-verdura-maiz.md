@@ -3,7 +3,7 @@ title: "Tortilla de verdura maiz"
 date: 2026-05-16
 description: "Tortilla de verduras con harina de maíz y queso, ideal para una comida simple y rendidora."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/tortilla de verdura.jpg
 prep_time: "15 min"
 cook_time: "20 min"
 total_time: "35 min"

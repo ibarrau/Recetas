@@ -3,7 +3,7 @@ title: "Pancitos Rellenos"
 date: 2026-05-16
 description: "Pancitos suaves con relleno a elección, prácticos para una comida rápida."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/pan relleno.jpg
 prep_time: "20 min"
 cook_time: "20 min"
 total_time: "40 min"

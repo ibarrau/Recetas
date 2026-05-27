@@ -3,7 +3,7 @@ title: "Masa Tarta"
 date: 2026-05-16
 description: "Masa básica para tartas saladas, simple y rápida de preparar."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/masa de tarta.jpg
 prep_time: "10 min"
 cook_time: "15 min"
 total_time: "25 min"

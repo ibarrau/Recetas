@@ -3,7 +3,7 @@ title: "Medallon o Croqueta de Zanahoria"
 date: 2026-05-16
 description: "Medallones de zanahoria simples y rendidores, ideales para horno o sartén."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/medallonesde zanahoria.jpg
 prep_time: "15 min"
 cook_time: "20 min"
 total_time: "35 min"

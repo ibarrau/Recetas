@@ -3,7 +3,7 @@ title: "Arepas de Polenta"
 date: 2026-05-16
 description: "Arepas sencillas de polenta, tiernas por dentro y doradas por fuera."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/arepas de polenta.jpg
 prep_time: "10 min"
 cook_time: "20 min"
 total_time: "30 min"

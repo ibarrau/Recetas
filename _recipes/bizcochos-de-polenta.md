@@ -3,7 +3,7 @@ title: "Bizcochos de polenta"
 date: 2026-05-16
 description: "Bizcochos tiernos con polenta, con una textura rústica ideal para la merienda."
 category: "Merienda"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/bizochitos de polenta.jpg
 prep_time: "15 min"
 cook_time: "20 min"
 total_time: "35 min"

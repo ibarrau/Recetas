@@ -3,7 +3,7 @@ title: "Hamburguesa lentejas"
 date: 2026-05-16
 description: "Hamburguesas caseras de lentejas, prácticas y rendidoras para almuerzo o cena."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/hamburguesa de lenteja.jpg
 prep_time: "20 min"
 cook_time: "20 min"
 total_time: "40 min"
