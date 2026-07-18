@@ -3,7 +3,7 @@ title: "Empanadas Carne"
 date: 2026-05-16
 description: "Empanadas caseras de carne con papa, cebolla y aceitunas."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/empanada carne.jpg
 prep_time: "25 min"
 cook_time: "25 min"
 total_time: "50 min"
@@ -15,7 +15,7 @@ tags:
   - carne
   - horno
 youtube: ""
-recipe_id: 10
+recipe_id: 13
 ---
 
 ## Ingredientes

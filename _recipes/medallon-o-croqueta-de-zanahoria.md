@@ -15,7 +15,7 @@ tags:
   - croquetas
   - medallones
 youtube: "https://www.youtube.com/watch?v=vPHMPMl0z7M"
-recipe_id: 13
+recipe_id: 24
 ---
 
 ## Ingredientes

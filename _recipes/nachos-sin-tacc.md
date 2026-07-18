@@ -15,7 +15,7 @@ tags:
   - sin tacc
   - snack
 youtube: "https://www.youtube.com/watch?v=NxAiIUrFwpE"
-recipe_id: 23
+recipe_id: 25
 ---
 
 ## Ingredientes

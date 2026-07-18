@@ -3,7 +3,7 @@ title: "Budín de maicena"
 date: 2026-05-16
 description: "Budin sin TACC para merienda."
 category: "Merienda"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/budin maicena.jpg
 prep_time: "10 min"
 cook_time: "40 min"
 total_time: "50 min"
@@ -14,6 +14,7 @@ tags:
   - merienda
   - ligera
   - rápida
+recipe_id: 8
 ---
 
 ## Ingredientes

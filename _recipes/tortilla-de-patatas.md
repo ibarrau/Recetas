@@ -14,6 +14,7 @@ tags:
   - española
   - cena
   - huevos
+recipe_id: 37
 ---
 
 ## Ingredientes

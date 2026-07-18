@@ -15,7 +15,7 @@ tags:
   - maíz
   - queso
 youtube: "https://www.youtube.com/watch?v=OZT_A-_cqUw"
-recipe_id: 1
+recipe_id: 38
 ---
 
 ## Ingredientes

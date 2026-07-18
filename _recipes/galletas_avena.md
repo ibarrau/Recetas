@@ -3,7 +3,7 @@ title: "Galletas de avena"
 date: 2026-05-15
 description: "Galletas de avena sin trigo en 15 minutos."
 category: "Pasta"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/galletas avena.jpg
 prep_time: "10 min"
 cook_time: "15 min"
 total_time: "25 min"
@@ -13,6 +13,7 @@ tags:
   - galletitas
   - merienda
   - rápida
+recipe_id: 15
 ---
 
 ## Ingredientes

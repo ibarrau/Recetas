@@ -15,7 +15,7 @@ tags:
   - hamburguesas
   - legumbres
 youtube: "https://www.youtube.com/watch?v=EIh_HyN42qQ"
-recipe_id: 22
+recipe_id: 18
 ---
 
 ## Ingredientes

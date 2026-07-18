@@ -15,7 +15,7 @@ tags:
   - tarta
   - base
 youtube: "https://www.youtube.com/watch?v=8uCOu2l1vp8"
-recipe_id: 8
+recipe_id: 23
 ---
 
 ## Ingredientes

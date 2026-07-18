@@ -15,7 +15,7 @@ tags:
   - rellenos
   - horno
 youtube: "https://www.youtube.com/watch?v=tjF6KfDBbfc"
-recipe_id: 14
+recipe_id: 28
 ---
 
 ## Ingredientes

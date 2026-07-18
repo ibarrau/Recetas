@@ -15,7 +15,7 @@ tags:
   - arepas
   - maíz
 youtube: "https://www.youtube.com/watch?v=9psuz-gxXiE"
-recipe_id: 4
+recipe_id: 3
 ---
 
 ## Ingredientes

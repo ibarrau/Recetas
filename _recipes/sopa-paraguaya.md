@@ -15,7 +15,6 @@ tags:
   - maíz
   - horno
 youtube: "https://www.youtube.com/watch?v=k1m7Hw50wcw&list=PLdmDEWREdZtrF5H9o4-QCUucvLREU6ZbA&index=5"
-recipe_id: 17
 ---
 
 ## Ingredientes

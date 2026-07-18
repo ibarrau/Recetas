@@ -3,7 +3,7 @@ title: "Chizitos"
 date: 2026-05-16
 description: "Bocaditos de polenta y queso, ideales como snack casero o para la merienda."
 category: "Merienda"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/chizitos.png
 prep_time: "15 min"
 cook_time: "15 min"
 total_time: "30 min"
@@ -15,7 +15,7 @@ tags:
   - polenta
   - queso
 youtube: "https://www.youtube.com/watch?v=PsVHGsNW81c"
-recipe_id: 21
+recipe_id: 12
 ---
 
 ## Ingredientes

@@ -3,7 +3,7 @@ title: "Bizcochos"
 date: 2026-05-16
 description: "Bizcochitos caseros clásicos, ideales para la merienda o para acompañar el mate."
 category: "Merienda"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/bizcochos.jpg
 prep_time: "15 min"
 cook_time: "20 min"
 total_time: "35 min"
