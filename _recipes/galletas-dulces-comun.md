@@ -3,7 +3,7 @@ title: "Galletas dulces comun"
 date: 2026-05-16
 description: "Galletitas dulces básicas, fáciles y rápidas para cualquier merienda."
 category: "Merienda"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/galleta dulce.jpg
 prep_time: "15 min"
 cook_time: "12 min"
 total_time: "27 min"

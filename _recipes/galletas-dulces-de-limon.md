@@ -3,7 +3,7 @@ title: "Galletas dulces de limon"
 date: 2026-05-16
 description: "Galletitas suaves y perfumadas con limón, ideales para la merienda."
 category: "Merienda"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/galleta limon.jpg
 prep_time: "15 min"
 cook_time: "12 min"
 total_time: "27 min"
