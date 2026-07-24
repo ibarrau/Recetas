@@ -3,7 +3,7 @@ title: "Pastel de Papa"
 date: 2026-07-18
 description: "Pastel de papa casero con carne, puré cremoso y gratinado al horno."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/pastel papa.jpg
 prep_time: "30 min"
 cook_time: "35 min"
 total_time: "65 min"

@@ -3,7 +3,7 @@ title: "Albondigas de Berenjena"
 date: 2026-07-18
 description: "Albondigas de berenjena al horno, crocantes por fuera y suaves por dentro."
 category: "Almuerzo/Cena"
-image: /assets/images/albóndiga de berenjena.jpg
+image: /assets/images/albondiga de berenjena.jpeg
 prep_time: "20 min"
 cook_time: "30 min"
 total_time: "50 min"

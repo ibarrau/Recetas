@@ -1,5 +1,5 @@
 ---
-title: "Tortilla de patatas"
+title: "Tortilla de papa"
 date: 2026-05-16
 description: "Una receta clásica española, jugosa y fácil de preparar."
 category: "Tradicional"

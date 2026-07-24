@@ -3,7 +3,7 @@ title: "Lasagna de carne"
 date: 2026-07-18
 description: "Lasagna casera en capas con salsa bolognesa y queso gratinado."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/lasagna carne.jpg.jpg
 prep_time: "35 min"
 cook_time: "40 min"
 total_time: "75 min"

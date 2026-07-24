@@ -3,7 +3,7 @@ title: "Nachos sin tacc"
 date: 2026-05-16
 description: "Nachos aptos sin TACC, crocantes y fáciles para picar."
 category: "Almuerzo/Cena"
-image: /assets/images/hero-recetas.jpg
+image: /assets/images/nacho horno.jpg
 prep_time: "15 min"
 cook_time: "15 min"
 total_time: "30 min"
@@ -20,7 +20,13 @@ recipe_id: 25
 
 ## Ingredientes
 
-Pendiente de completar.
+- 200 g. Harina de maíz
+- 2 cucharadas mix de semillas
+- 80 g. Aceite de Oliva
+- 160 g. Agua
+- Pizca de Sal
+- Pizca de cúrcuma
+
 
 ## Preparación
 

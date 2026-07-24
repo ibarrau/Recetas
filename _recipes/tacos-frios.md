@@ -3,7 +3,7 @@ title: "Tacos con Relleno de Verduras Frescas"
 date: 2026-07-18
 description: "Tacos livianos con tortillas suaves y relleno fresco de verduras crocantes."
 category: "Almuerzo/Cena"
-image: /assets/images/tacos frios.jpg
+image: /assets/images/tacos frios.jpeg
 prep_time: "25 min"
 cook_time: "10 min"
 total_time: "35 min"
